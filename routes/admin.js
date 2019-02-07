@@ -9,9 +9,10 @@ router.post('/addProducts', (req, res, next) => {
 
     products.push(req.body.product);
 
-    // res.send(products);
+    // must be done with send/redirect or things to finish
+    res.send(products);
     
-    res.redirect('/');
+    // res.redirect('/');
 
 });
 
