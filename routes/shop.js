@@ -5,9 +5,9 @@ const router = express.Router();
 const rootDir = require('../utils/path');
 const { products } = require('./admin');
 
-router.get('/', (req, res, next) => {
+router.get('/shop', (req, res, next) => {
 
-   console.log('products at shop: ', products)
+   res.send(products);
    
    // res.render('shop', { 
    //    products, 
